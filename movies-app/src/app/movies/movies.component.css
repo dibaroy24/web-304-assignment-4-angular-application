@@ -1,0 +1,22 @@
+#movies {
+display: flex;
+}
+
+.movie {
+  width: 20%;
+  padding: 20px;
+}
+
+.movie:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
+.movie.selected {
+  background: #B52E31;
+  color: white;
+}
+
+.movie img {
+  width: 100%;
+}

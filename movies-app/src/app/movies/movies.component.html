@@ -1,0 +1,14 @@
+<h2>My Movies</h2>
+<article id="movies">
+  <section *ngFor="let movie of movies" (click)="onSelect(movie)" class="movie" [class.selected]="movie === selectedMovie">
+    <h1>{{ movie.name }}</h1>
+    <img src="../assets/img/{{movie.image}}" alt="{{movie.name}}">
+  </section>
+</article>
+
+<!--
+We will also include a new custom element tag called <app-movie-detail> which
+will load the component will be used to display and edit the details of
+a single movie.
+-->
+<app-movie-detail [movie]="selectedMovie"></app-movie-detail>

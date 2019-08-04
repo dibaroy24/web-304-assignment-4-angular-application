@@ -1,0 +1,28 @@
+<!--
+In the movie detail component HTML template we will use a <div> tag with a
+special Angular *ngIf attribute with a value of "movie".
+
+In this case it is checking to see if a movie has been selected and passed to
+the movie detail component.
+-->
+<article *ngIf="movie">
+  <h2>{{ movie.name | uppercase }}
+    <span *ngIf="movie.series">(Netflix Series)</span>
+  Details:</h2>
+
+  <p>{{ movie.name }} Genres:</p>
+  <ol>
+    <li *ngFor="let genre of movie.genres">{{ genre }}</li>
+  </ol>
+
+  <div>
+    <label for="name">Name:</label>
+     <!--
+     In an HTML <input> tag, we will use a special Angular [(ngModel)]
+     attribute. This attribute uses Angular's two-way binding which synchronizes
+     the data in both the View and the Model. It will have a value of the name
+     property of the selected movie.
+     -->
+     <input [(ngModel)]="movie.name" alt="name">
+  </div>
+</article>
