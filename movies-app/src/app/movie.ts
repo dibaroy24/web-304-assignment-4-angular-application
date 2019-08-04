@@ -10,6 +10,7 @@ export interface Movie {
   id: number;
   name: string;
   image: string;
+  trailer: string;
   genres: string[];
   series: boolean;
 }

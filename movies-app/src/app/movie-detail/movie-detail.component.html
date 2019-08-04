@@ -10,6 +10,12 @@ the movie detail component.
     <span *ngIf="movie.series">(Netflix Series)</span>
   Details:</h2>
 
+  <p>{{ movie.name }} Trailer:</p>
+  <video width="320" height="240" controls>
+    <source src="../assets/videos/{{movie.trailer}}" type="video/mp4">
+  </video>
+  <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/{{movie.trailer}}"></iframe> -->
+
   <p>{{ movie.name }} Genres:</p>
   <ol>
     <li *ngFor="let genre of movie.genres">{{ genre }}</li>
