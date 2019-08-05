@@ -6,6 +6,7 @@ In this case it is checking to see if a movie has been selected and passed to
 the movie detail component.
 -->
 <article *ngIf="movie">
+  <button (click)="goBack()">Back</button>
   <h2>{{ movie.name | uppercase }}
     <span *ngIf="movie.series">(Netflix Series)</span>
   Details:</h2>

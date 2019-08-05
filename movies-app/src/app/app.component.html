@@ -1,4 +1,20 @@
 <header>
-  <h1>{{ title }}</h1>
+  <!-- Now that we have set up routes we can reference them in our templates.
+  To link to a route, use Angular’s special routerLink attribute.
+  -->
+  <!-- <h1>{{ title }}</h1> -->
+  <h1><a routerLink="/movies">{{ title }}</a></h1>
 </header>
-<app-movies></app-movies>
+<!-- In order to load any content which is loaded using a route, we need to
+place the <router-outlet> custom element in a template.
+-->
+<router-outlet></router-outlet>
+<!-- <app-movies></app-movies> -->
+
+<!--
+We can then use this method in our template to test it and ensure that the
+service was successfully passed to the component.
+-->
+{{testLogger()}}
+{{ logger.log('Log this!') }}
+{{ logger.warn('Be careful!') }}

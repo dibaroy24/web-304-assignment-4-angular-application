@@ -5,7 +5,17 @@
 {
   box-sizing: border-box;
 }
+
 body {
   font-family: cursive;
   margin: 0;
+}
+
+app-movies,
+app-movie-detail {
+  display: block;
+  max-width: 1200px;
+  min-height: 80vh;
+  padding: 20px 0;
+  margin: auto;
 }
