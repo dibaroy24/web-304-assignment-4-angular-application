@@ -1,8 +1,12 @@
 header {
   background: #1976D2;
+  /* background: #9F0000; */
+  background-image: url('../assets/css/popcorn-banner.jpg');
   color: white;
+  /* color: #FCFCFC; */
   padding: 30px;
   text-align: center;
+  /* text-align: right; */
 }
 
 /*

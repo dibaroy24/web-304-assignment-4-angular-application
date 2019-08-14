@@ -1,0 +1,11 @@
+article {
+  background: #1976D2;
+  /* background: #9F0000; */
+  background-image: url('../../assets/css/netflix-background_133779.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* color: #FCFCFC; */
+  padding: 30px;
+  text-align: left;
+}
